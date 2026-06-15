@@ -17,6 +17,7 @@ from loguru import logger as log
 from rich import print as rprint
 from rich.prompt import Confirm, Prompt
 
+import config as cfg
 from pipeline.core.orchestrator import Orchestrator
 from pipeline.utils.console import (
     console,
@@ -128,7 +129,6 @@ def run(
             raise typer.Exit()
 
     # Build specs dict
-    import config as cfg
     specs_keyed: dict[str, dict[str, Any]] = {}
     for row in sku_rows:
         key = row.get("sku_key", row["sku_id"])
@@ -186,8 +186,6 @@ def status(
     ),
 ) -> None:
     """Show pipeline status for a specific SKU."""
-    import config as cfg
-    state_path = cfg.OUTPUT_DIR / sku_id / "_state.json"
 
     if not state_path.exists():
         rprint(f"[red]No pipeline state found for SKU: {sku_id}[/red]")
@@ -207,9 +205,7 @@ def check() -> None:
     print_header()
     print_api_config()
 
-    import config as cfg
     rprint(f"\n[bold]Paths:[/bold]")
-    rprint(f"  Project root: [blue]{cfg.PROJECT_ROOT}[/blue]")
     rprint(f"  Output dir: [blue]{cfg.OUTPUT_DIR}[/blue]")
     rprint(f"  Logs dir: [blue]{cfg.LOGS_DIR}[/blue]")
     rprint(f"  Config dir: [blue]{cfg.CONFIG_DIR}[/blue]")

@@ -26,9 +26,9 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/kf-cptec/content-factory"
-"Repository" = "https://github.com/kf-cptec/content-factory.git"
-"Bug Tracker" = "https://github.com/kf-cptec/content-factory/issues"
+"Homepage" = "https://github.com/MXY66678/kf-cptec-content-factory"
+"Repository" = "https://github.com/MXY66678/kf-cptec-content-factory.git"
+"Bug Tracker" = "https://github.com/MXY66678/kf-cptec-content-factory/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

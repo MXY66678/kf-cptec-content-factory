@@ -289,7 +289,7 @@ def generate_mock_master(sku_id: str, sku_row: dict[str, str]) -> dict[str, Any]
                 "primary": "pex crimp tool",
                 "keywords": [
                     "pex crimp tool",
-                    "best pex crimp tool 2025",
+                    f"best pex crimp tool {datetime.now().year}",
                     "pex crimp tool kit",
                     "pex crimp tool for sale",
                 ],
@@ -516,14 +516,14 @@ def generate_mock_master(sku_id: str, sku_row: dict[str, str]) -> dict[str, Any]
                 'src="https://www.youtube.com/embed/dQw4w9WgXcQ" '
                 'frameborder="0" allowfullscreen></iframe>'
             ),
-            "health_checked_at": "2026-06-12T00:00:00+00:00",
+            "health_checked_at": "2026-06-15T00:00:00+00:00",
         },
     ]
 
     master = {
         "sku_id": sku_id,
         "pipeline_version": "2.0",
-        "generated_at": "2026-06-12T00:00:00+00:00",
+        "generated_at": "2026-06-15T00:00:00+00:00",
         "state": "ASSEMBLED",
         "sku_json": {
             "sku_id": sku_id,
@@ -539,7 +539,7 @@ def generate_mock_master(sku_id: str, sku_row: dict[str, str]) -> dict[str, Any]
         "blog_structure": {
             "title": (
                 f"{sku_row.get('product_name', 'PEX Crimp Tool')}: "
-                "Complete Guide (2026)"
+                f"Complete Guide ({datetime.now().year})"
             ),
             "meta_description": (
                 "Complete guide to choosing and using a PEX crimp tool. "
@@ -629,7 +629,7 @@ def generate_sample_data(
         "pex crimp tool,5400,high,google,transactional\n"
         "how to use pex crimp tool,3200,high,google,informational\n"
         "pex crimp tool vs clamp tool,1800,medium,google,comparison\n"
-        "best pex crimp tool 2025,2100,medium,google,transactional\n"
+        f"best pex crimp tool {datetime.now().year},2100,medium,google,transactional\n"
         "pex crimp tool kit,1600,medium,amazon,transactional\n"
         "crimp pex ring tool,1200,medium,google,transactional\n"
         "how to crimp pex pipe,2800,high,google,informational\n"

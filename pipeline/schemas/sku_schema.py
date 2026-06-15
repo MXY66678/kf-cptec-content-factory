@@ -38,7 +38,7 @@ class Variant(BaseModel):
 
 class SKUCanonical(BaseModel):
     """Canonical SKU schema — normalized from raw input."""
-    sku_id: str = Field(..., pattern=r"^KF-CPTEC-\w+$")
+    sku_id: str = Field(..., pattern=r"^KF-CPTEC-[\w-]+$")
     product_name: str = Field(..., max_length=200)
     brand: str = Field(default="KF CPTEC")
     category: str = Field(..., description="crimp / press / cutter / expander")
