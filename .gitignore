@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+*.env.local
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Pipeline outputs (keep structure, ignore generated data)
+output/**/*.json
+!output/.gitkeep
+
+# Logs
+logs/**/*.jsonl
+logs/**/*.log
+!logs/.gitkeep
+
+# YouTube cache
+pipeline/output/_yt_cache/
+
+# Generated sample data
+data/sample/*.csv
+data/sample/*.json
+!data/sample/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

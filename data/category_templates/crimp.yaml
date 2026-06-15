@@ -1,0 +1,62 @@
+# KF CPTEC Crimp Tool Category Template
+category: crimp
+tool_type: PEX Crimp Tool
+description: "Template for PEX crimp tool blog structures and step vocabularies"
+
+step_intent_vocabulary:
+  - overview
+  - prep
+  - position
+  - crimp
+  - inspect
+  - troubleshoot
+
+section_ordering:
+  - intro
+  - tool_overview
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - comparison
+  - tool_overview
+  - faq
+  - cta
+
+how_to_steps:
+  - step_intent: overview
+    heading_template: "How to Use a {TOOL_TYPE}: Step-by-Step"
+    default_video_search: "{tool_type} how to use"
+  - step_intent: prep
+    heading_template: "Step 1: Cut and Prep the {PIPE_MATERIAL} Pipe"
+    default_video_search: "{tool_type} cut prep {pipe_material}"
+  - step_intent: position
+    heading_template: "Step 2: Position the Ring and Fitting"
+    default_video_search: "{tool_type} position ring fitting"
+  - step_intent: crimp
+    heading_template: "Step 3: Crimp the Connection"
+    default_video_search: "{tool_type} crimp connection"
+  - step_intent: inspect
+    heading_template: "Step 4: Verify with the Go/No-Go Gauge"
+    default_video_search: "{tool_type} go no-go gauge"
+  - step_intent: troubleshoot
+    heading_template: "Troubleshooting: Incomplete Crimps, Leaks, and Calibration"
+    default_video_search: "{tool_type} troubleshooting"
+
+comparison_default: "{TOOL_TYPE} vs. {ALTERNATIVE_TOOL}: Which Do You Need?"
+alternative_tools:
+  - "Cinch Clamp Tool"
+  - "Push-Fit Fittings"
+  - "ProPress Tool"
+
+video_search_strategy:
+  duration: medium
+  relevance_language: en
+  max_results: 10
+  score_threshold: 0.55
+
+schema_markup_defaults:
+  how_to_step: HowTo
+  faq: FAQPage
+  tool_overview: Product

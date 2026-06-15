@@ -1,0 +1,50 @@
+# KF CPTEC Pipe Cutter Category Template
+category: cutter
+tool_type: PEX Pipe Cutter
+description: "Template for pipe cutter blog structures and step vocabularies"
+
+step_intent_vocabulary:
+  - overview
+  - measure
+  - cut
+  - deburr
+  - inspect
+  - maintain
+
+section_ordering:
+  - intro
+  - tool_overview
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - comparison
+  - faq
+  - cta
+
+how_to_steps:
+  - step_intent: overview
+    heading_template: "How to Use a {TOOL_TYPE}: Step-by-Step"
+    default_video_search: "{tool_type} how to use guide"
+  - step_intent: measure
+    heading_template: "Step 1: Measure and Mark the {PIPE_MATERIAL} Pipe"
+    default_video_search: "{tool_type} measure mark pipe"
+  - step_intent: cut
+    heading_template: "Step 2: Make the Cut"
+    default_video_search: "{tool_type} cut pipe straight"
+  - step_intent: deburr
+    heading_template: "Step 3: Deburr the Cut Edge"
+    default_video_search: "{tool_type} deburr pipe edge"
+  - step_intent: inspect
+    heading_template: "Step 4: Inspect the Cut Quality"
+    default_video_search: "{tool_type} inspect cut quality"
+  - step_intent: maintain
+    heading_template: "Maintenance and Blade Replacement"
+    default_video_search: "{tool_type} maintenance blade replacement"
+
+comparison_default: "{TOOL_TYPE} vs. {ALTERNATIVE_TOOL}: Which Do You Need?"
+alternative_tools:
+  - "Hacksaw"
+  - "Pipe Cutter Wheel"
+  - "Reciprocating Saw"

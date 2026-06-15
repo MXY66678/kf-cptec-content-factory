@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "kf-cptec-content-factory"
+version = "2.0.0"
+description = "Multi-AI Content Factory — automated SEO blog, Amazon listing, and video retrieval pipeline for e-commerce SKUs"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "KF CPTEC", email = "dev@kf-cptec.com"},
+]
+keywords = ["seo", "content-marketing", "ecommerce", "ai-pipeline", "amazon-listing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Text Processing :: Indexing",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kf-cptec/content-factory"
+"Repository" = "https://github.com/kf-cptec/content-factory.git"
+"Bug Tracker" = "https://github.com/kf-cptec/content-factory/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pipeline*"]
+
+[tool.setuptools.package-data]
+pipeline = ["py.typed"]
+
+[project.scripts]
+kf-content-factory = "main:app"
+kf-pipeline = "main:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

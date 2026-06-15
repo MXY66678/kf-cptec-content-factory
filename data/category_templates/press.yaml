@@ -1,0 +1,56 @@
+# KF CPTEC Press Tool Category Template
+category: press
+tool_type: PEX Press Tool
+description: "Template for press tool blog structures and step vocabularies"
+
+step_intent_vocabulary:
+  - overview
+  - prep
+  - insert
+  - press
+  - inspect
+  - troubleshoot
+
+section_ordering:
+  - intro
+  - tool_overview
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - how_to_step
+  - comparison
+  - faq
+  - cta
+
+how_to_steps:
+  - step_intent: overview
+    heading_template: "How to Use a {TOOL_TYPE}: Step-by-Step"
+    default_video_search: "{tool_type} how to use guide"
+  - step_intent: prep
+    heading_template: "Step 1: Cut and Prepare the {PIPE_MATERIAL} Pipe"
+    default_video_search: "{tool_type} cut pipe preparation"
+  - step_intent: insert
+    heading_template: "Step 2: Insert the Fitting and Sleeve"
+    default_video_search: "{tool_type} insert fitting sleeve"
+  - step_intent: press
+    heading_template: "Step 3: Press the Connection"
+    default_video_search: "{tool_type} press connection tool"
+  - step_intent: inspect
+    heading_template: "Step 4: Inspect the Pressed Joint"
+    default_video_search: "{tool_type} inspect pressed joint"
+  - step_intent: troubleshoot
+    heading_template: "Troubleshooting: Leaks, Misalignment, and Battery Issues"
+    default_video_search: "{tool_type} troubleshooting problems"
+
+comparison_default: "{TOOL_TYPE} vs. {ALTERNATIVE_TOOL}: Which Do You Need?"
+alternative_tools:
+  - "Crimp Tool"
+  - "Push-Fit Fittings"
+  - "Slip Coupling Method"
+
+video_search_strategy:
+  duration: medium
+  relevance_language: en
+  max_results: 10
+  score_threshold: 0.55
